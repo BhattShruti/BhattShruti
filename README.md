@@ -48,11 +48,11 @@ Full-stack AI-powered cooking assistant that generates personalized recipes base
 
 **Tech:** Python, Flask, React, Google Gemini API, Tailwind CSS
 
-### 🎭 [Deepfake Video Detection System](https://github.com/BhattShruti/deepfake-detection)
-AI-powered web application detecting manipulated videos using computer vision and deep learning.
-- Built the end-to-end pipeline: video upload, preprocessing, model inference, and result generation
-- Integrated a CNN-based model (TensorFlow) with OpenCV for frame-level video processing
-- Connected a React frontend to a Flask backend for a complete user-facing detection workflow
+### 🎭 [Deepfake Video Detection System](https://github.com/BhattShruti/VeriScan-deepfake-video-detection)
+Full-stack deepfake video detection system (CNN-LSTM hybrid) — 92.65% accuracy, 0.946 AUC.
+- Built the React frontend (upload flow, results UI, component library) and the Flask REST API (upload/predict endpoints, CORS, secure file handling)
+- Integrated frontend and backend end-to-end via Axios for a complete user-facing detection workflow
+- Collaborated on the CNN-LSTM detection pipeline (Xception feature extraction + LSTM temporal head) as part of a 3-person team
 
 **Tech:** Python, Flask, React, TensorFlow, OpenCV
 
