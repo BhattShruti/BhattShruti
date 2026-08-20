@@ -1,73 +1,107 @@
 # Hi, I'm Shruti Bhatt 👋
 
-### Full Stack Developer | Python & React | B.Tech Computer Engineering, 2026
+**Software Developer | Python Backend | Full Stack | AI/ML**
 
-I build full-stack and backend systems with a focus on clean API design, secure and scalable architecture, and production-grade code quality.
+I enjoy building practical software — from backend systems and REST APIs to AI-powered applications and computer vision projects.
 
----
-
-## 🧑‍💻 About Me
-
-- 🎓 B.Tech Computer Engineering, GB Pant University of Agriculture & Technology, Pantnagar (2022–2026)
-- 💻 Experienced across the stack: REST API design, relational database schemas, React frontends, and AWS cloud deployment
-- 🔒 Comfortable with production concerns beyond just "making it work" — concurrency safety, webhook security, automated testing, and CI
-- 📫 Reach me at **bshruti110@gmail.com**
+My main interests are **Python backend development, full-stack applications, databases, APIs, and applied AI/ML**.
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Featured Projects
 
-**Languages:** Python · SQL · JavaScript · TypeScript · Java
+### 🔹 [LSA Service Booking Platform](https://github.com/BhattShruti/Lsa-booking-platform)
 
-**Backend:** Flask · RESTful APIs · PostgreSQL · MySQL
+A production-oriented backend system for **LSA service discovery, availability, bookings, and payment processing**.
 
-**Frontend:** React · HTML5 · CSS3 · Tailwind CSS
+**Highlights:**
+- Built a layered **Flask REST API** using Application Factory architecture, SQLAlchemy, and PostgreSQL.
+- Implemented **JWT authentication, bcrypt password hashing, rate limiting, and resource-ownership checks**.
+- Designed relational models with **foreign keys, constraints, indexes, and booking state management**.
+- Prevented N+1 queries using SQLAlchemy `selectinload` and added tests to verify query behavior.
+- Implemented **concurrency-safe booking creation** using PostgreSQL row-level locking (`FOR UPDATE`).
+- Built payment processing with **Decimal-based money handling**, timeout/error handling, and payment state reconciliation.
+- Secured payment webhooks using **HMAC-SHA256 verification, replay protection, and idempotency**.
+- Containerized the application using **Docker and Docker Compose**, with PostgreSQL, migrations, health checks, and Gunicorn.
+- Added **GitHub Actions CI** with PostgreSQL-backed automated tests.
 
-**Cloud & DevOps:** AWS (EC2, RDS, S3) · Git · GitHub Actions (CI) · pytest
-
-**AI/ML:** TensorFlow · OpenCV · Google Gemini API · Prompt Engineering
-
----
-
-## 📌 Projects
-
-### 🔐 [LSA Booking Backend](https://github.com/BhattShruti/habotconnect-lsa-booking-backend)
-Flask REST API backend built for a technical hiring assessment, covering LSA search, service booking, and payment processing.
-- Designed a normalized PostgreSQL schema for bookings, services, and users
-- Implemented concurrency-safe booking logic to prevent double-booking under simultaneous requests
-- Built a secure webhook endpoint with HMAC-SHA256 signature verification
-- Wrote a pytest test suite integrated into a CI pipeline for automated testing on every change
-
-**Tech:** Python, Flask, PostgreSQL, pytest, GitHub Actions
-
-### 🍳 [Rasoi – AI Home Chef](https://github.com/BhattShruti/Rasoi)
-Full-stack AI-powered cooking assistant that generates personalized recipes based on available ingredients, time, cuisine, and preferences.
-- Built a modular React + Flask application integrating the Google Gemini API for structured recipe generation and conversational assistance
-- Implemented request validation, centralized error handling, and secure environment-based configuration
-- Delivered real-time recipe generation with an interactive, responsive UI
-
-**Tech:** Python, Flask, React, Google Gemini API, Tailwind CSS
-
-### 🎭 [Deepfake Video Detection System](https://github.com/BhattShruti/VeriScan-deepfake-video-detection)
-Full-stack deepfake video detection system (CNN-LSTM hybrid) — 92.65% accuracy, 0.946 AUC.
-- Built the React frontend (upload flow, results UI, component library) and the Flask REST API (upload/predict endpoints, CORS, secure file handling)
-- Integrated frontend and backend end-to-end via Axios for a complete user-facing detection workflow
-- Collaborated on the CNN-LSTM detection pipeline (Xception feature extraction + LSTM temporal head) as part of a 3-person team
-
-**Tech:** Python, Flask, React, TensorFlow, OpenCV
-
-### ☁️ WordPress Deployment on AWS
-Deployed a WordPress application on AWS, configuring EC2 for hosting, RDS for database management, and S3 for object storage.
-- Set up cloud infrastructure, database connectivity, and application deployment for reliable hosting
-
-**Tech:** AWS EC2, AWS RDS, AWS S3
+**Tech:** `Python` `Flask` `SQLAlchemy` `PostgreSQL` `Alembic` `JWT` `Docker` `Gunicorn` `Pytest` `GitHub Actions`
 
 ---
 
-## 📜 Certifications
-- Cloud Computing with AWS — Internshala Trainings (87%, Aug 2024)
-- TCS iON Career Edge – Young Professional — Tata Consultancy Services (Aug 2023)
+### 🔹 [Rasoi — AI Kitchen Assistant](https://github.com/BhattShruti/Rasoi)
+
+An AI recipe assistant built around a simple idea:
+
+> **"I have these ingredients and this much time — what can I actually cook?"**
+
+Rasoi uses an LLM to generate practical recipes based on available ingredients, cooking time, cuisine, servings, and user goals.
+
+**Highlights:**
+- Built a **React + Flask full-stack application** with a dedicated backend API.
+- Integrated the **Gemini API** through a dedicated client/service layer.
+- Designed structured prompts around **ingredients, cooking time, cuisine, servings, and user goals**.
+- Focused on practical **Indian home cooking**, beginner-friendly measurements, pantry ingredients, and minimizing unnecessary ingredients.
+- Designed structured AI responses so recipes can be rendered consistently in the frontend.
+- Added backend **request validation, error handling, request IDs, timing/logging middleware, and API documentation**.
+- Built the frontend recipe flow for ingredient input, recipe selection, detailed instructions, and responsive UI.
+- Iterated on the prompts and product experience based on the behavior of generated recipes.
+
+**Tech:** `Python` `Flask` `React` `TypeScript` `Gemini API` `REST APIs` `Prompt Engineering`
 
 ---
 
-📄 Open to Full Stack Developer and Backend Developer roles.
+### 🔹 [VeriScan — Deepfake Video Detection](https://github.com/BhattShruti/VeriScan-deepfake-video-detection)
+
+A deepfake video detection project combining **computer vision, deep learning, and a web application** to classify uploaded videos.
+
+**Highlights:**
+- Built the application layer using **React and Flask** for video upload, processing, prediction requests, and result presentation.
+- Implemented frontend workflows for **video selection, upload, loading states, errors, and prediction results**.
+- Added backend handling for file validation, secure uploads, CORS, and model prediction endpoints.
+- Worked with a deepfake detection pipeline using **Xception-based feature extraction and LSTM temporal modeling**.
+- Used **OpenCV** for video/frame processing and the model inference pipeline.
+- Connected the frontend and deep-learning backend through an API-based workflow.
+- Contributed as part of a team, with my primary work focused on the **frontend, Flask backend, and end-to-end application integration**.
+
+**Tech:** `Python` `TensorFlow` `Xception` `LSTM` `OpenCV` `Flask` `React` `Vite` `Axios`
+
+---
+
+## 🛠️ Technologies
+
+### Backend
+`Python` `Flask` `REST APIs` `SQLAlchemy` `PostgreSQL` `MySQL` `SQLite`
+
+### Frontend
+`React` `TypeScript` `JavaScript` `HTML` `CSS`
+
+### AI / ML
+`LLM APIs` `Prompt Engineering` `Deep Learning` `CNN` `LSTM` `Computer Vision` `OpenCV`
+
+### DevOps & Tools
+`Docker` `Git` `GitHub` `GitHub Actions` `Pytest` `Postman`
+
+---
+
+## 📌 Currently Working On
+
+- Building stronger **Python backend systems**
+- Designing reliable **REST APIs and database-backed applications**
+- Improving my understanding of **system design, testing, and deployment**
+- Building practical applications with **LLMs and AI**
+
+---
+
+## 🔗 Connect
+
+[![GitHub](https://img.shields.io/badge/GitHub-BhattShruti-181717?style=flat&logo=github)](https://github.com/BhattShruti)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Shruti%20Bhatt-0A66C2?style=flat&logo=linkedin)](YOUR_LINKEDIN_URL)
+
+---
+
+> I like understanding how things work under the hood, building them, breaking them, and improving them.
+
+
+
